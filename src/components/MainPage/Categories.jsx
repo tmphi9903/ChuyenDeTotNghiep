@@ -1,4 +1,5 @@
 import React from "react"
+import  "./Categories.css"
 
 const Categories = () => {
   const data = [
@@ -45,7 +46,7 @@ const Categories = () => {
     {
       cateImg: "./images/category/cat11.png",
       cateName: "Books",
-    },
+    }
   ]
 
   return (

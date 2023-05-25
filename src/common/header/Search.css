@@ -1,0 +1,43 @@
+.search p{
+    color: #e94560;
+    font-weight: 800;
+    font-style: italic;
+    font-size: x-large;
+    letter-spacing: 1px;
+    
+ 
+}
+.search-box span{
+    color: orangered;
+    
+}
+
+input{
+    border-radius: 20px;
+    margin-left: auto;
+    
+}
+
+.search {
+    background-color: black;
+}
+.search-box{
+    color: orangered;
+    border-color: black;
+    max-width: 500px;
+    cursor: pointer;
+  
+ 
+}
+
+.search-box i{
+    position: relative;
+    left: -6px;
+    color: red;
+    
+}
+
+.search-box span{
+    font-weight: bold;
+    color: red;
+}

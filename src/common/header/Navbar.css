@@ -1,0 +1,91 @@
+.header {
+    background-color: black;
+
+}
+  
+
+
+
+.header .navlink {
+    
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1px;
+    position: relative;
+    left: 498px;
+    padding-top: 14px;
+    font-weight: bold;
+    
+   
+    
+}
+
+
+.header .navlink .h {
+    position: relative;
+    left: -20px;
+    color: aliceblue;
+    
+    
+}
+
+.header .navlink .h:hover{
+    color: red;
+    
+}
+
+.header .navlink .h:active{
+    border-bottom: 1px red solid;
+    
+    
+}
+
+
+
+.header .navlink .s {
+    position: relative;
+    right: -20px;
+    color: aliceblue;
+}
+
+.header .navlink .s:hover{
+    color: red;
+    
+}
+
+.header .navlink .s:active{
+    border-bottom: 1px red solid;
+    
+}
+
+
+.header .navlink .m {
+    position: relative;
+    right: -60px;
+    color: aliceblue;
+}
+
+.header .navlink .m:hover{
+    color: red;
+    
+}
+
+.header .navlink .m:active{
+    border-bottom: 1px red solid;
+    
+}
+
+.header .navlink .p {
+    position: relative;
+    right: -100px;
+    color: aliceblue;
+}
+
+.header .navlink .p:hover{
+    color: red;
+    
+}
+
+.header .navlink .p:active{
+    border-bottom: 1px red solid;
+    
+}

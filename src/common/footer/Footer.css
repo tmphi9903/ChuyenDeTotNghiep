@@ -1,7 +1,10 @@
 footer {
-  background-color: #0f3460;
+  
+  background: linear-gradient(-45deg, #fff, black, black, #0f3460 );
   padding: 100px 0;
   color: #fff;
+  
+
 }
 footer h1 {
   margin-bottom: 30px;
@@ -33,4 +36,8 @@ footer h2 {
 footer li {
   margin-bottom: 10px;
   opacity: 0.5;
+}
+
+span{
+  color: #e94;
 }

@@ -1,0 +1,135 @@
+.dave{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+    background-color: #e3e3ef;
+   
+    
+    
+   
+    
+  
+    
+}
+
+
+
+
+
+
+
+table td {
+    width: 250px;
+    height: 30px;
+    background-color: rgb(175, 204, 215);
+    text-align: center;
+    color: #333;
+    font-size: 17px !important;
+    
+    border-radius: 8px;
+    
+}
+
+table td.t{
+    text-align: center;
+    color: black;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    padding-top: 4px;
+    background-color: rgb(151, 151, 164);
+   
+}
+
+.img-manager{
+    width: 50px;
+    height: 50px;
+}
+
+table td button{
+    padding: 5px 10px;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+table td button.edit{
+    border: 1px solid green;
+    background-color: rgb(7,168,7);
+    color: white;
+}
+
+table td button.edit:hover{
+    background-color: rgb(3,71,3);
+}
+
+table td button.delete{
+    border: 1px solid red;
+    background-color: rgb(219, 19, 19);
+    color: white;
+    position: relative;
+    right: -5px;
+}
+table td button.delete:hover{
+    background-color: rgb(92, 5 ,5);
+}
+
+
+
+.add-form{
+    height: 50px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    left: 175px;
+
+    top: 10px;
+    margin-top: 20px;
+}
+
+.add-form input{
+    width: 230px;
+    height: 30px;
+    border: 1px solid;
+    padding: 5px 10px;
+    
+}
+
+.add-form input.add-i{
+    position: relative;
+    left: -80px;
+}
+
+.add-form input.add-n{
+    position: relative;
+    left: -60px;
+}
+
+.add-form input.add-p{
+    position: relative;
+    left: -40px;
+}
+
+.add-form input.add-d{
+    position: relative;
+    left: -20px; 
+    top: 1.6px;
+}
+
+
+
+
+.add-form button{
+    width: 50px;
+    height: 30px;
+    color: white;
+    background-color: rgb(31, 171, 31);
+    cursor: pointer;
+}
+
+.add-form button:hover {
+    background-color: rgb(5, 86, 5);
+}

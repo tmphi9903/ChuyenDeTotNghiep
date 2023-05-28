@@ -35,6 +35,7 @@ const Wrapper = () => {
                   <i>{val.cover}</i>
                 </div>
                 <h3>{val.title}</h3>
+                
                 <p>{val.decs}</p>
               </div>
             )

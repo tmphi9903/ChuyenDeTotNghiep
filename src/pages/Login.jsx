@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom"
+import Swal from "sweetalert2";
 
 
 
@@ -109,10 +110,24 @@ export default function Login() {
 
     //Show Successfull Submittion
       
-    setSuccess("Form Submitted Successfully!");
+    Swal.fire({
+      position: 'mid-mid',
+      icon: 'success',
+      title: 'Logged in successfully!',
+      showConfirmButton: false,
+      timer: 1500,
+      }
+      
+    )
+    window.location = 'home'
+    
+
+
    
     
-    window.location="home";
+    
+    
+   
     
     
     
@@ -134,7 +149,7 @@ export default function Login() {
           error={emailError}
           id="standard-basic"
           variant="standard"
-          sx={{ width: "40%" }}
+          sx={{ width: "50%" }}
           value={emailInput}
           InputProps={{}}
           size="small"
@@ -145,7 +160,7 @@ export default function Login() {
         />
       </div>
       <div style={{ marginTop: "10px" }}>
-        <FormControl sx={{ width: "40%" }} variant="standard">
+        <FormControl sx={{ width: "50%" }} variant="standard">
           <InputLabel
             error={passwordError}
             htmlFor="standard-adornment-password"
@@ -185,14 +200,15 @@ export default function Login() {
         Remember Me
       </div>
 
-      <div className="login" style={{ width: "40%", marginTop: "10px"}}>
+      <div className="login" style={{ width: "50%", marginTop: "10px"}}>
         <Link>
           <Button className="handle"
             variant="contained"
             fullWidth
             type="text/javascript"
             startIcon={<LoginIcon />}
-            onClick={setTimeout(handleSubmit, 2000)}
+            onClick={handleSubmit}
+            
             >
             
               LOGIN
@@ -220,17 +236,7 @@ export default function Login() {
         </Stack>
       )}
 
-      {/* <div className="forgot-doyou" style={{ marginTop: "7px", fontSize: "10px" }} margin="left">
-        <a className="forgot">Forgot Password</a>
-        <br />
-        <a className="doyou-sign">
-          Do you have an account ?{" "}
-          <small style={{ textDecoration: "underline", color: "blue" }}>
-            Sign Up
-          </small>
-        </a>
-      
-      </div> */}
+  
     </div>
   );
 }

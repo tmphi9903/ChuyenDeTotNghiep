@@ -1,5 +1,6 @@
 import React, {useRef, useState} from 'react'
 import "./Manager.css"
+import Swal from 'sweetalert2'
 
 
 
@@ -10,6 +11,8 @@ import "./Manager.css"
 
 function Manager() {
     
+
+  
   const list = [
   {
       id: 1,
@@ -110,9 +113,28 @@ function Manager() {
     const[lists, setList] = useState(list)
     const [updateState, setUpdateState] = useState(-1)
 
+
+    const [filter,setFilter] = useState('');
+    const searchText = (event) =>{
+      setFilter(event.target.value);
+    }
+
+    let dataSearch = lists.filter(current =>{
+      return Object.keys(current).some(key =>
+        current[key].toString().toLowerCase().includes(filter.toString().toLocaleLowerCase()))
+    });
+
     return (
     
+      <div>
+        <div className='search-box f_flex'>
+          <i className='fa fa-search'></i>
+          <input type='text' placeholder='Search infor you want ...' value={filter} onChange={searchText.bind(this)} />
+          <span>Search</span>
+        </div>
+
         
+
         
         <div className='dave'>
           <div className='content'>
@@ -125,7 +147,7 @@ function Manager() {
                 <td className='t'>Description photo</td>
                 <td className='t'>Manager</td>
                 {
-                    lists.map((current) => (
+                    dataSearch.map((current) => (
                       updateState === current.id ? <EditList current={current} lists={lists} setList={setList}/>:
                         <tr>
                             <td>{current.id}</td>
@@ -146,15 +168,30 @@ function Manager() {
           </div>
             
         </div>
+      </div>
 
     )
   function handleEdit(id) {
     setUpdateState(id)
   }
+
+
   function handleDelete(id) {
     const newlist = lists.filter((li) => li.id !== id)
+   Swal.fire({
+      position: 'mid-mid',
+      icon: 'success',
+      title: 'Deleted successfully!',
+      showConfirmButton: false,
+      timer: 1500
+    }) 
     setList(newlist)
   }
+
+
+
+
+
   function handleSubmit(event) {
     event.preventDefault()
     const id = event.target.elements.id.value

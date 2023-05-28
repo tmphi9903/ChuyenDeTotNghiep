@@ -11,12 +11,6 @@ const Shop = ({ addToCart, shopItems }) => {
           <Catg />
 
           <div className='contentWidth'>
-            <div className='heading'>
-              <div className='heading-left row  f_flex'>
-                <h2>Products</h2>
-              </div>
-         
-            </div>
             <div className='product-content  grid1'>
               <ShopCart addToCart={addToCart} shopItems={shopItems} />
             </div>

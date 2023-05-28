@@ -29,6 +29,7 @@ const Catg = () => {
   ]
   return (
     <>
+      
       <div className='category'>
         <div className='chead d_flex'>
           <h1>Brands </h1>

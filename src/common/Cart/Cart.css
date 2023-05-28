@@ -106,8 +106,8 @@
 }
 
 .cart-total{
-  background: linear-gradient(-45deg, #e356, #fff, #6213, black);
-  animation: gradient 15s ease infinite;
+  background-color: #8cbfec;
+  
   
 }
 
@@ -125,23 +125,15 @@
 
 
 .cart-list{
-  background: linear-gradient(-45deg, #e356, #fff, #6213, black);
-  animation: gradient 15s ease infinite;
+  background-color: rgb(236, 229, 223);
   
 }
 
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-  
-}
+
 .cart-list li{
   color: black;
+}
+
+i{
+  cursor: pointer;
 }

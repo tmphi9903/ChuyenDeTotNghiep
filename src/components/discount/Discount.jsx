@@ -1,6 +1,6 @@
 import React from "react"
 import Dcard from "./Dcard"
-import "./Discount.css"
+
 
 const Discount = () => {
   return (

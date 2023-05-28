@@ -1,8 +1,18 @@
-import React from "react"
+import React, {useState} from "react"
 import { Link } from "react-router-dom"
 import "./Search.css"
+import { Icon } from "@mui/material"
 
-const Search = ({ CartItem }) => {
+
+
+
+
+
+
+
+
+
+  const Search = ({ CartItem }) => {
   // fixed Header
   window.addEventListener("scroll", function () {
     const search = document.querySelector(".search")
@@ -13,19 +23,41 @@ const Search = ({ CartItem }) => {
 
 
 
+
+
+
+
+
+
+
+
+
   return (
     <>
       <section className='search'>
+
+
         <div className='container c_flex'>
-          <div className='logo width '>
+
+
+
+          <div className='name-shop width '>
             <p>Meanfi shop</p>
           </div>
 
-          <div className='search-box f_flex'>
-            <i className='fa fa-search'></i>
-            <input type='text' placeholder='Search infor you want ...' />
-            <span>Search</span>
+
+
+
+          <div className='logo f_flex'>
+            <img src="./images/logo/logo.png"/>
           </div>
+
+
+
+
+
+
+
 
           <div className='icon f_flex width'>
             <i className='fa fa-user icon-circle'></i>
@@ -36,7 +68,15 @@ const Search = ({ CartItem }) => {
               </Link>
             </div>
           </div>
+
+
+
+
         </div>
+
+
+
+
       </section>
     </>
   )

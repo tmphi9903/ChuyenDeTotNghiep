@@ -1,6 +1,48 @@
 const Sdata = {
   shopItems: [
     {
+      id: 1,
+      name: "JSneaker Nam 42",
+      price: "100",
+      cover: "./images/flash/flash-1.png",
+      discount: "50",
+    },
+    {
+      id: 2,
+      name: "Defy Skyline Skeleton",
+      price: "20",
+      cover: "./images/flash/flash-2.png",
+      discount: "70",
+    },
+    {
+      id: 3,
+      name: "Iphone Xs-Max",
+      price: "200",
+      cover: "./images/flash/flash-3.png",
+      discount: "40",
+    },
+    {
+      id: 4,
+      name: "Smart Watch Black",
+      price: "50",
+      cover: "./images/flash/flash-4.png",
+      discount: "15",
+    },
+    {
+      id: 5,
+      name: "Camera WiFi Ezviz C3TN",
+      price: "20",
+      cover: "./images/discount/discount-9.png",
+      discount: "85",
+    },
+    {
+      id: 6,
+      name: "Iphone Xs-Max 256 Black",
+      price: "200",
+      cover: "./images/flash/flash-3.png",
+      discount: "35",
+    },
+    {
       id: 7,
       cover: "./images/shops/shops-1.png",
       name: "Mapple Earphones",

@@ -140,7 +140,7 @@ function Manager() {
           <div className='content'>
             <AddList setList = {setList} />
             <form onSubmit={handleSubmit}>
-              <table>
+              <table> 
                 <td className='t'>ID</td>
                 <td className='t'>Name</td>
                 <td className='t'>Price</td>
